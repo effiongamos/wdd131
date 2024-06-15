@@ -1,0 +1,90 @@
+/* styles/base.css */
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #006400;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+}
+
+.card h2 {
+    color: black;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.card ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card ul li a:hover {
+    color: #9e8f09;
+}
+
+footer {
+    background-color: #006400;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Specific styles for layout of text and image */
+.card p, .card img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card p {
+    width: calc(100% - 120px);
+    margin: 0;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
