@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById('currentyear');
     const lastModifiedSpan = document.getElementById('lastModified');
     const hamburgerButton = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
+    const menu = document.querySelector('nav.menu');
 
     // Set current year
     yearSpan.textContent = new Date().getFullYear();
