@@ -1,18 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const yearElement = document.getElementById('currentyear');
-    const lastModifiedElement = document.getElementById('last-modified');
-    const hamburger = document.getElementById('hamburger');
-    const navbar = document.getElementById('navbar');
+document.addEventListener("DOMContentLoaded", () => {
+    const yearSpan = document.getElementById('currentyear');
+    const lastModifiedSpan = document.getElementById('lastModified');
+    const hamburgerButton = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
 
     // Set current year
-    yearElement.textContent = new Date().getFullYear();
+    yearSpan.textContent = new Date().getFullYear();
 
     // Set last modified date
-    lastModifiedElement.textContent = document.lastModified;
+    lastModifiedSpan.textContent = document.lastModified;
 
-    // Toggle navigation menu in mobile view
-    hamburger.addEventListener('click', () => {
-        navbar.classList.toggle('open');
-        hamburger.textContent = navbar.classList.contains('open') ? '✖' : '☰';
+    // Toggle menu on hamburger click
+    hamburgerButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        hamburgerButton.textContent = menu.classList.contains('active') ? '✖' : '☰';
     });
 });
