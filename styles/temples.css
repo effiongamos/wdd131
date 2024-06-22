@@ -17,16 +17,25 @@ main h2 {
     text-align: center;
 }
 
-
 .menu {
     display: flex;
     align-items: center;
 }
 
+.menu.active {
+    display: flex; /* Show menu when active */
+    flex-direction:column;
+    position:fixed;
+    top: 6px; /* Adjust positioning as needed */
+    right: 10px; /* Adjust positioning as needed */
+    background-color: #006400;
+    border: 1px solid #fff;
+}
+
 nav a {
     text-decoration: none;
     color: white;
-    margin: 20px;
+    margin: 0 10px; /* Adjust margin for better spacing */
 }
 
 nav a:hover {
@@ -34,7 +43,13 @@ nav a:hover {
 }
 
 .hamburger {
-    display: none;
+    display: block; /* Show hamburger button by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px; /* Adjust margin as needed */
 }
 
 main {
@@ -42,7 +57,6 @@ main {
     margin: 20px auto;
     padding: 0 20px;
 }
-
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
