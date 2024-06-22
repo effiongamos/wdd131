@@ -23,19 +23,19 @@ main h2 {
 }
 
 .menu.active {
-    display: flex; /* Show menu when active */
-    flex-direction:column;
-    position:fixed;
-    top: 6px; /* Adjust positioning as needed */
-    right: 10px; /* Adjust positioning as needed */
+    display: flex; 
+    flex-direction: column;
+    margin: 30px;
+    top: 6px;
+    right: 10px;
     background-color: #006400;
-    border: 1px solid #fff;
+    border: 1px solid;
 }
-
 nav a {
+    display: none;
     text-decoration: none;
     color: white;
-    margin: 0 10px; /* Adjust margin for better spacing */
+    margin: 0 10px;
 }
 
 nav a:hover {
@@ -43,13 +43,13 @@ nav a:hover {
 }
 
 .hamburger {
-    display: block; /* Show hamburger button by default */
+    display: flex; 
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
     color: white;
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-left: 10px;
 }
 
 main {
