@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country: Nigeria</title>
+    <meta name="description" content="This site provides more data and information about Nigeria, a beautiful country with amazing people, known as the Giant of Africa.">
+    <meta name="author" content="Benjamin Effiong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/aso-rock.webp" alt="Aso-rock Abuja, Nigeria" srcset="images/aso-rock.webp 600w" sizes="(max-width: 600px) 100vw, 600px">
+        </div>
+            <div>
+                <aside class="info">
+                    <h2>Data</h2>
+                    <p>Area: 923.77K km²</p>
+                    <p>Population: 218.54 million</p>
+                    <p>Capital: Abuja</p>
+                    <p>Languages: English, Annang</p>
+                    <p>Currency: Naira</p>
+                    <p>Time Zone: UTC+1</p>
+                    <p>Calling Code: +234</p>
+                    <p>Internet TLD: .ng</p>
+                </aside>
+                <aside class="weather">
+                    <h2>Weather <span class="weather-icon"><img src="images/Weather-icon.svg" alt="Weather Icon" ></span></h2>
+                    <p>Temperature: <span id="temperature">30°C</span></p>
+                    <p>Condition: <span id="condition">Sunny</span></p>
+                    <p>Wind: <span id="wind">10 km/h</span></p>
+                    <p>Wind Chill: <span id="windchill">N/A</span></p>
+                </aside>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Benjamin Effiong 🌴 Nigeria </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
