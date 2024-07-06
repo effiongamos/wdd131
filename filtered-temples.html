@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+        <meta name="description" content="This site is to show temples pictures of the church of jesus christ of latter day saints and see the beauty of it and understand the importance of temple in our lives.">
+        <meta name="author" content="Benjamin Effiong">
+    </head>
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <nav class="menu">
+                <a href="#" data-filter="all">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
+                <button class="hamburger" aria-label="Menu">&#9776;</button>
+            </nav>
+        </header>
+        <main>
+            <h2>Home</h2>
+            <div class="gallery"></div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 🌴 Benjamin Effiong 🌴 Nigeria </p>
+            <p id="lastModified">Last Modification: </p>
+        </footer>
+    </body>
+</html>

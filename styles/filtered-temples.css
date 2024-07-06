@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+main h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  
+}
+.menu a:hover {
+    background-color: #004d00;
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    padding: 20px;
+}
+figure {
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 2.5%;
+    box-shadow: 0 4px 8px gray;
+}
+
+figcaption {
+    font-style: italic;
+    padding: 10px 0 0;
+}
+
+figcaption h3 {
+    font-style: normal;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu.active a {
+        display: block;
+    }
+}
