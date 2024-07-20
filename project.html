@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page-Estamabenco Baking/Catering</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <meta name="description" content="Savor the best of puff-puff at Estamabenco Baking/Catering! Our family recipe delivers the perfect balance of fluffiness and flavor. Freshly made daily, our puff-puff is the highlight of our menu. Order online or visit us today!">
+    <meta name="Author" content="Benjamin Effiong">
+    <link rel="icon" href="images/logo2.png" type="image/png">
+<body>
+    <header class="header-container">
+        <img src="images/logo2.png" alt="Estamabenco Baking/Catering Logo" class="logo">
+        <button class="hamburger" aria-label="Menu">&#9776;</button>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="products.html">Our Products</a>
+            <a href="order.html">Order Online</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <!-- Pop up Message -->
+    <aside class="announcement" id="announcement">
+        <div class="announcement-content">
+            <h2 id="announcement-title">What's Next for Estamabenco Baking/Catering?</h2>
+            <p id="announcement-text">We're expanding! Along with our delicious puff-puff, we'll soon offer catering services and quality slippers and foodstuffs.</p>
+            <p class="contact-info" id="contact-info">Contact us for tasty meals and top-quality goods. We're here to serve you!</p>
+        </div>
+    </aside>
+    <main>
+        <section id="welcome">
+            <div class="carousel-container">
+                <div class="carousel-slide" id="slide1">
+                    <img src="images/puffpuff.webp" alt="Delicious Puff-puff Image 1">
+                    <div class="carousel-content">
+                        <h2>Delicious Puff-puff</h2>
+                        <p>Freshly made daily</p>
+                        <a href="about.html" class="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" id="slide2">
+                    <img src="images/puff2.webp" alt="Delicious Puff-puff Image 2">
+                    <div class="carousel-content">
+                        <h2>Delicious Puff-puff</h2>
+                        <p>Freshly made daily</p>
+                        <a href="about.html" class="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" id="slide3">
+                    <img src="images/puff3.webp" alt="Delicious Puff-puff Image 3">
+                    <div class="carousel-content">
+                        <h2>Delicious Puff-puff</h2>
+                        <p>Freshly made daily</p>
+                        <a href="about.html" class="learn-more-button">Learn More</a>
+                    </div>
+                </div>
+                <button class="carousel-button prev" id="prev-slide" aria-label="Previous Slide">&#10094;</button>
+                <button class="carousel-button next" id="next-slide" aria-label="Next Slide">&#10095;</button>
+            </div>
+        </section>        
+        <section id="customer">
+            <h2>What Our Customers Are Saying</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="images/facesmile.webp" alt="Customer smile" class="testimonial-img">
+                        <p>"Estamabenco Baking/Catering's puff-puff is simply divine! The perfect golden-brown exterior and fluffy inside make it the best I've ever had. Each bite is a little piece of heaven!"</p>
+                    </div>
+                </div>
+                <div class="testimonial reverse">
+                    <div class="testimonial-content">
+                        <img src="images/smileface2.webp" alt="Customer smile" class="testimonial-img">
+                        <p>"From the first bite, I was hooked! Estamabenco's puff-puff is always fresh and perfectly sweet. It's my go-to treat for any occasion. Absolutely delicious!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section >
+            <h2>Sign Up for Our Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Benjamin Effiong 🌴 Nigeria </p>
+        <p id="lastModified">Last Modification: </p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/">
+                <img src="images/Facebook.svg" alt="facebook">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.svg" alt="youtube">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

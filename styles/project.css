@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #b5651d; /* Brown */
+    --secondary-color: #5f5f5f; /* Gray */
+    --text-color: #000000; /* Black */
+    --accent1-color: #FFA500; /* Orange */
+    --accent2-color: #ffffff; /* White */
+    --accent3-color: #FF6347; /* Tomato Red */
+    --accent4-color: #3CB371; /* Medium Sea Green */
+}
+/* Styling the body of home pages */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--accent2-color);
+    margin: 0;
+    padding: 0;
+}
+/* sytling of Header in Home, about us, our products, order online and contact us*/
+ /*Begining style*/
+ header {
+    background-color: var(--main-color);
+    color: var(--accent2-color);
+    padding: 0.7rem;
+    font-family: 'lora', serif;
+}
+header img {
+    width: 150px;
+    margin-left: 90px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.logo {
+    max-width: 90px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.menu a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 10px;
+}
+.menu a:hover {
+    background-color: var(--accent1-color);
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent2-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .menu a {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+    }
+}
+/* End Style */
+/* stying the pop up message about the company future plan*/
+aside {
+    margin-top: 20px;
+}
+.announcement {
+    background-color: var(--accent2-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    position: absolute; 
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    max-width: 500px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box; 
+}
+.announcement-content {
+    padding: 1rem;
+}
+.announcement h2 {
+    font-family: 'Lora', serif;
+    color: var(--text-color);
+    margin: 0.5rem
+}
+.announcement p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    margin: 2px; 
+}
+.announcement:hover {
+    background-color: var(--accent4-color);
+    transition: background-color 0.3s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 600px) {
+    .announcement {
+        top: 0; 
+        width: 100%; 
+        max-width: 500px; 
+        padding: 0.8rem; 
+        font-size: 1rem; 
+    }
+    aside {
+        margin-top: 260px;
+        display: none;
+    }
+}
+/* Styling the main content of the home page */
+main {
+    margin-top: 220px; 
+}
+/* style the image and the content of the section */
+#welcome {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--accent2-color);
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    border-radius: 10px; 
+}
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* styling images in the images */
+.carousel-content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--accent2-color);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 300px;
+}
+.carousel-content h2 {
+    font-family: 'Lora', serif;
+    color: var(--accent1-color);
+    margin: 0 0 0.5rem;
+    font-size: 2rem; 
+}
+.carousel-content p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 1.2rem; /* Clear and readable font size */
+}
+.learn-more-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent1-color)
+}
+.learn-more-button:hover {
+    background-color: var(--accent4-color)
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: var(--accent2-color);
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    opacity: 0; 
+    visibility: hidden; 
+}
+.carousel-container:hover .carousel-button {
+    opacity: 1; 
+    visibility: visible;
+}
+.carousel-button:hover {
+    background-color: var(--accent1-color) 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-content {
+        max-width: 90%;
+        padding: 0.5rem;
+    }
+
+    .carousel-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-content p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .carousel-content {
+        max-width: 95%;
+        bottom: 10px;
+    }
+    .carousel-content h2 {
+        font-size: 1.2rem;
+    }
+    .carousel-content p {
+        font-size: 0.9rem;
+    }
+    .carousel-button {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+/* end of the styling of image and the content */
+/* styling the testimonial*/
+#customer h2 {
+    text-align: center;
+}
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 13rem;
+    padding: 2rem 0;
+}
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonial-content {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    text-align: center;
+}
+.testimonial p {
+    font-style: italic;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .testimonial-content {
+        flex-direction: row;
+        max-width: 200px;
+    }
+
+    .testimonial-container {
+        gap: 3rem;
+        padding: 0.8rem;
+    }
+}
+/* Newletter styling */
+section h2 {
+    text-align: center;
+}
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: var(--accent2-color);
+    font-family: 'Roboto', sans-serif;
+}
+input,textarea {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    margin-left: 20px
+}
+label {
+    padding: .5rem;
+}
+input[type="text"],
+input[type="email"] {
+    font-size: 0.9em;
+    padding: 8px;}
+button {
+        margin: 1rem;
+        background-color: var(--accent1-color);
+        color: var(--accent2-color);
+        font-size: 1rem;
+        border-radius: 1rem;
+        padding: 8px;
+}
+button:hover {
+        background-color: var(--accent4-color);
+    }
+/* Responsive Design */
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    input,
+    textarea {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+    label {
+        padding: 0.5rem 0;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+/* footer styling section */
+footer {
+    background-color: var(--main-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 40px;
+}
+footer p {
+    margin: 0.5rem 0;
+    flex: 1 1 100%;
+}
+footer .sociallinks {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+footer .sociallinks a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+footer .sociallinks img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    input,
+    textarea {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+    label {
+        padding: 0.5rem 0;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer p, footer .sociallinks {
+        flex: 1 1 auto;
+    }
+}
