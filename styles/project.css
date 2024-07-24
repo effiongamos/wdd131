@@ -394,3 +394,149 @@ footer .sociallinks img {
         flex: 1 1 auto;
     }
 }
+/* About Us Section Styles */
+#about-us {
+    padding: 30px 20px;
+    background-color: var(--accent2-color);
+}
+.about-container h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.about-container h3 {
+    color: var(--main-color);
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.about-container p {
+    margin-bottom: 15px;
+}
+.about-container figure {
+    margin: 20px 0;
+    text-align: center;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.team-member {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+.team-member img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+.about-container ul {
+    list-style: none;
+    padding: 0;
+}
+.about-container ul li {
+    margin-bottom: 10px;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--accent3-color);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn:hover {
+    background-color: var(--main-color);
+}
+/* Centering the Contact Us Button */
+#about-us .btn {
+    display: block;
+    margin: 20px auto;
+}
+/* Media Queries of  About Us*/
+@media (max-width: 600px) {
+    .about-container h2 {
+        font-size: 1.75rem;
+    }
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+    .team-member {
+        flex: 1 1 100%;
+    }
+    .team-member img {
+        max-width: 120px;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.875rem;
+    }
+}
+/* Our products section Sytle */
+#our-product {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+#our-product h2 {
+    text-align: center;
+    color: var(--main-color);
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.product-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+.product-details h3 {
+    color: var(--accent1-color);
+}
+.product-details p {
+    color: var(--text-color);
+}
+.order-button {
+    background-color: var(--accent3-color);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.order-button:hover {
+    background-color: var(--main-color);
+  }
+.customer-reviews {
+    margin-top: 20px;
+    text-align: center;
+}
+.customer-reviews h3 {
+    color: var(--main-color);
+    text-align: center;
+}
+.customer-reviews blockquote {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-left: 5px solid var(--accent1-color);
+    border-right: 5px solid var(--accent1-color);
+    margin: 10px 0;
+}
+ /* Media Query */
+ @media (max-width: 600px) {
+    .product-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .product-item img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+}

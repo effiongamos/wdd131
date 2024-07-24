@@ -100,7 +100,7 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     document.getElementById('newsletter-form').style.display = 'none';
     // Show the thank you message
     const thankYouMessage = document.getElementById('thank-you-message');
-    thankYouMessage.style.display = 'block';
+    thankYouMessage.style.display = 'relative';
     // Add additional content to the thank you message
     const additionalContent = document.createElement('div');
     additionalContent.innerHTML = `
@@ -109,4 +109,21 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
         <p>Have a great day! 😊</p>
     `;
     thankYouMessage.appendChild(additionalContent);
+});
+// script for about us
+document.addEventListener('DOMContentLoaded', function() {
+    const contactButton = document.querySelector('#about-us .btn');
+    
+    if (contactButton) {
+        contactButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector('footer'); // Adjust if necessary
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 });

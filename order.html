@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page-Estamabenco Baking/Catering</title>
+    <title>Order Online-Estamabenco Baking/Catering</title>
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/project.js" defer></script>
     <meta name="description" content="Savor the best of puff-puff at Estamabenco Baking/Catering! Our family recipe delivers the perfect balance of fluffiness and flavor. Freshly made daily, our puff-puff is the highlight of our menu. Order online or visit us today!">
@@ -17,12 +17,56 @@
             <a href="index.html">Home</a>
             <a href="about.html">About us</a>
             <a href="products.html">Our Products</a>
-            <a href="order.html">Order Online</a>
+            <a href="order.html" class="active">Order Online</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+    <!-- Pop up Message -->
+    <aside class="announcement" id="announcement">
+        <div class="announcement-content">
+            <h2 id="announcement-title">What's Next for Estamabenco Baking/Catering?</h2>
+            <p id="announcement-text">We're expanding! Along with our delicious puff-puff, we'll soon offer catering services and quality slippers and foodstuffs.</p>
+            <p class="contact-info" id="contact-info">Contact us for tasty meals and top-quality goods. We're here to serve you!</p>
+        </div>
+    </aside>
     <Main>
-        
+        <section class="intro">
+            <h1>Order Online</h1>
+            <p>Welcome to our online ordering system. Choose your favorite treats and get them delivered to your doorstep or ready for pickup!</p>
+        </section>
+        <section class="product-categories">
+            <h2>Our Products</h2>
+            <div class="category">
+                <img src="images/puff-puff.jpg" alt="Puff-Puff">
+                <h3>Puff-Puff</h3>
+                <p>Delicious and freshly made.</p>
+            </div>
+        </section>
+        <section class="product-listings">
+            <h2>Puff-Puff</h2>
+            <div class="product">
+                <img src="images/puff-puff-plain.jpg" alt="Plain Puff-Puff">
+                <h3>Plain Puff-Puff</h3>
+                <p>Light and fluffy.</p>
+                <p>Price: $2.00 per piece</p>
+                <label for="quantity-plain-puff">Quantity:</label>
+                <input type="number" id="quantity-plain-puff" name="quantity" min="1" value="1">
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <aside class="cart-summary">
+            <h2>Your Cart</h2>
+            <ul>
+                <li>Plain Puff-Puff x 2 - $4.00</li>
+                <!-- Add more cart items as needed -->
+            </ul>
+            <p>Subtotal: $4.00</p>
+            <p>Taxes: $0.00</p>
+            <p>Total: $4.00</p>
+            <button>Proceed to Checkout</button>
+        </aside>
     </Main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🌴 Benjamin Effiong 🌴 Nigeria </p>
